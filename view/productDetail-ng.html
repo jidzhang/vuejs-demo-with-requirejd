@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>产品展示</title>
+    <link rel="stylesheet" href="../assets/lib/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<div class="container" id="app">
+    <h1>产品展示: {{productDetail.productName}}</h1>
+    <small>{{productDetail.postTime}}</small>
+    <main v-html="productDetail.content">
+
+    </main>
+    <main>
+        {{productDetail.content}}
+    </main>
+</div>
+
+<script data-main="../assets/main" src="../assets/lib/require.js"></script>
+<script>
+    require(['main'], function () {
+        require(['gadget/product/productDetail']);
+    })
+</script>
+
+</body>
+</html>

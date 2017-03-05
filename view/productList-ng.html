@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>产品列表</title>
+    <link rel="stylesheet" href="../assets/lib/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<div class="container" id="app">
+    <h1>产品列表</h1>
+    <ul>
+        <li v-for="item in productList" v-if="item.isShow">
+            <span><img v-bind:src="picUrl(item.icon)" alt="" style="width: 40px;height: 40px;">{{item.productName}}</span>
+        </li>
+    </ul>
+</div>
+
+<script data-main="../assets/main" src="../assets/lib/require.js"></script>
+<script>
+    require(['main'], function () {
+        require(['gadget/product/productList']);
+    })
+</script>
+</body>
+</html>

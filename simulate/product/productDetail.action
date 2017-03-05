@@ -1,0 +1,9 @@
+{
+    statusCode: 0,
+     productDetail: {
+                     productName: '产品AA',
+                     icon: 'img/1.jpg',
+                     postTime: '2017-03-01',
+                     content:'<p>line1</p><p>line2</p>'
+                 }
+}
